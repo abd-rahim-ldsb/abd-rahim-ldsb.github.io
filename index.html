@@ -3,99 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <title>Maintenance | Landasan Digital</title>
+
+  <!-- Favicon (ICO) -->
+  <link rel="icon" href="./imgs/favicon.ico">
+
+  <!-- PNG fallback -->
   <link rel="icon" type="image/png" sizes="32x32" href="./imgs/favicon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon.png"> 
+
+  <!-- Apple iOS icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./imgs/apple-touch-icon.png">
+
   <style>
-    body {
+    :root {
+      --brand-red: #8B0000;
+      --brand-red-dark: #5f0000;
+      --brand-red-soft: #a21a1a;
+      --text-main: #2c2c2c;
+      --text-muted: #666;
+      --bg-1: #faf8f8;
+      --bg-2: #f0eeee;
+      --line-soft: rgba(139, 0, 0, 0.12);
+      --card-bg: rgba(255, 255, 255, 0.96);
+      --shadow-main: 0 24px 60px rgba(0, 0, 0, 0.10);
+      --shadow-soft: 0 10px 24px rgba(139, 0, 0, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      min-height: 100%;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f4f4;
-      color: #333;
+      color: var(--text-main);
+      background:
+        radial-gradient(circle at top left, rgba(139, 0, 0, 0.08), transparent 36%),
+        radial-gradient(circle at bottom right, rgba(115, 115, 115, 0.08), transparent 30%),
+        linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
     }
-    header {
-      background: #8B0000;
-      color: white;
-      padding: 20px 40px;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .container {
+
+    body {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    header {
+      background: linear-gradient(90deg, var(--brand-red) 0%, var(--brand-red-dark) 100%);
+      color: #fff;
+      padding: 18px 32px;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+
+    .page-wrap {
+      flex: 1;
+      display: flex;
       align-items: center;
-      min-height: 80vh;
-      text-align: center;
-      padding: 20px;
+      justify-content: center;
+      padding: 54px 20px 32px;
     }
-    .box {
-      background: white;
-      padding: 50px 40px;
-      border-radius: 10px;
-      border-top: 5px solid #cc0000;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      max-width: 600px;
+
+    .panel {
       width: 100%;
+      max-width: 820px;
+      background: var(--card-bg);
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: var(--shadow-main);
     }
+
+    .top-line {
+      height: 6px;
+      background: linear-gradient(90deg, var(--brand-red-dark) 0%, var(--brand-red) 45%, #9b9b9b 100%);
+    }
+
+    .panel-inner {
+      padding: 52px 54px 46px;
+      text-align: center;
+    }
+
     .logo {
-      max-width: 180px;
+      max-width: 190px;
       width: 100%;
-      height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
+
     h1 {
-      font-size: 30px;
-      margin-bottom: 15px;
-      color: #8B0000;
+      font-size: 42px;
+      color: var(--brand-red);
     }
-    p {
-      font-size: 16px;
-      color: #555;
-      line-height: 1.6;
-      margin: 10px 0;
+
+    .lead {
+      font-size: 17px;
+      color: var(--text-muted);
     }
-    .contact {
-      margin-top: 20px;
-      font-size: 15px;
-      color: #666;
-    }
-    .contact a {
-      color: #8B0000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-    .footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 13px;
-      color: #777;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    Landasan Digital
-  </header>
-  <div class="container">
-    <div class="box">
-      <img src="imgs/logo.png" alt="Landasan Digital Logo" class="logo" />
-      <h1>Website Under Maintenance</h1>
-      <p>
-        We're currently improving our website to serve you better.
-        Please check back shortly.
-      </p>
-      <p><i>Your Success Begins With Us</i></p>
-      <p class="contact">
-        For enquiries, please contact us at
-        <a href="mailto:enquiry@landasandigital.com">enquiry@landasandigital.com</a>
-      </p>
-    </div>
-  </div>
-  <div class="footer">
-    © 2026 Landasan Digital Sdn. Bhd. All rights reserved.
-  </div>
-</body>
-</html>
+
