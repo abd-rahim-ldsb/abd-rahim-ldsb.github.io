@@ -9,12 +9,12 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f9;
+      background: #f4f4f4;
       color: #333;
     }
 
     header {
-      background: #0a2540;
+      background: #8B0000;
       color: white;
       padding: 20px 40px;
       font-size: 20px;
@@ -25,27 +25,39 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 80vh;
+      min-height: 80vh;
       text-align: center;
+      padding: 20px;
     }
 
     .box {
       background: white;
-      padding: 50px;
-      border-radius: 12px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+      padding: 50px 40px;
+      border-radius: 10px;
+      border-top: 5px solid #cc0000;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       max-width: 600px;
+      width: 100%;
+    }
+
+    .logo {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 30px;
       margin-bottom: 15px;
-      color: #0a2540;
+      color: #8B0000;
     }
 
     p {
       font-size: 16px;
       color: #555;
+      line-height: 1.6;
+      margin: 10px 0;
     }
 
     .footer {
@@ -54,38 +66,32 @@
       font-size: 13px;
       color: #777;
     }
-
-    .logo {
-      max-width: 160px;
-      margin-bottom: 20px
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- Header -->
   <header>
     Landasan Digital
   </header>
 
-  <!-- Main -->
   <div class="container">
-    
-<div class="box">
-  <!-- LOGO -->
-  <img src="imgs/logo.png" alt="Landasan Digital Logo" class="logo" />
+    <div class="box">
 
-  <h1>🚧 Website Under Maintenance</h1>
-  <p>
-    We're currently improving our website to serve you better.
-    Please check back shortly.
-  </p>
-  <p><i>Your Success Begins With Us</i></p>
+      <img src="logo.png" alt="Landasan Digital Logo" class="logo" />
 
-</div>
-    
-  <!-- Footer -->
+      <h1>🚧 Website Under Maintenance</h1>
+
+      <p>
+        We're currently improving our website to serve you better.
+        Please check back shortly.
+      </p>
+
+      <p><i>Your Success Begins With Us</i></p>
+
+    </div>
+  </div>
+
   <div class="footer">
     © 2026 Landasan Digital Sdn. Bhd. All rights reserved.
   </div>
