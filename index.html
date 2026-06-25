@@ -1015,7 +1015,7 @@
                 position: relative;
                 top: 0;
                 display: grid;
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                 gap: 16px;
             }
 
@@ -1349,6 +1349,24 @@
                             Cloud Computing
                         </h3>
                     </div>
+                    <div class="solution-tab" onclick="showSolution(3)">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M3 7h18M3 12h18M3 17h18"/>
+                            </svg>
+                            Managed Services
+                        </h3>
+                    </div>
+                    <div class="solution-tab" onclick="showSolution(4)">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                            Security Assessment
+                        </h3>
+                    </div>
                 </div>
                 <div class="solutions-content">
                     <div class="solution-panel active" id="solution-0">
@@ -1436,6 +1454,33 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
                                 <span>Cloud Office Suites</span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="solution-panel" id="solution-3">
+                        <h3>Managed Services Provider</h3>
+                        <div class="solution-items">
+                            <div class="solution-item">
+                                <span>Managed Security Services Provider</span>
+                            </div>
+                            <div class="solution-item">
+                                <span>Managed Network and Security Infrastructure</span>
+                            </div>
+                            <div class="solution-item">
+                                <span>Managed IT System and Infrastructure</span>
+                            </div>
+                            <div class="solution-item">
+                                <span>Managed Cloud Computing Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="solution-panel" id="solution-4">
+                        <h3>Security Posture Assessment (Internal & External)</h3>
+                        <div class="solution-items">
+                            <div class="solution-item"><span>Penetration Test</span></div>
+                            <div class="solution-item"><span>Host Vulnerability Assessment</span></div>
+                            <div class="solution-item"><span>Network Device Assessment</span></div>
+                            <div class="solution-item"><span>Database Assessment</span></div>
+                            <div class="solution-item"><span>Web Application Assessment</span></div>
                         </div>
                     </div>
                 </div>
