@@ -426,9 +426,9 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         }
+
 
         .service-card {
             background: var(--charcoal);
@@ -1295,7 +1295,21 @@
                     </div>
                     <h3>Consulting</h3>
                     <p>Strategic solutions and actionable insights to navigate business complexities and drive digital transformation.</p>
+                    </div>
+                <div class="service-card">
+                <span class="service-number">04</span>
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        d="M9 17v-2a4 4 0 014-4h4M15 3h6v6M21 3l-7 7M4 13v6a2 2 0 002 2h6"/>
+                    </svg>
                 </div>
+                <h3>Managed Services (MSP)</h3>
+                <p>
+                    Proactive IT management and 24/7 support to ensure your systems run smoothly. 
+                    We monitor, maintain, and secure your infrastructure so you can focus on your business growth.
+                </p>
+            </div>
             </div>
         </div>
     </section>
